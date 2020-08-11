@@ -24,6 +24,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Product Admin", "Index", "ProductManager")</li>
                     <li>@Html.ActionLink("Category Admin", "Index", "ProductCategoryManager")</li>
+                    <li>
+                        @Html.ActionLink("0", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "glyphicon glyphicon-shopping-cart" })
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
